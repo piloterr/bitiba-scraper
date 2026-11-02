@@ -71,7 +71,7 @@ response = requests.get(
     params={
         "query": "75036. A search link returns 400.",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -346,7 +346,7 @@ response = requests.get(
     params={
         "query": "hundefutter",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
